@@ -1,0 +1,9 @@
+# API layer (lightweight - enough to run the server and the test-suite without ML libraries).
+fastapi>=0.115,<1
+uvicorn[standard]>=0.30,<1
+python-multipart>=0.0.18
+pydantic>=2.9,<3
+pydantic-settings>=2.6,<3
+ollama>=0.5,<1
+numpy>=1.26
+soundfile>=0.12

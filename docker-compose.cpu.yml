@@ -1,0 +1,8 @@
+# Override for machines without an NVIDIA GPU (e.g. a development laptop):
+#   docker compose -f docker-compose.yml -f docker-compose.cpu.yml up -d --build
+# Removes the GPU reservations; everything runs on CPU (transcription becomes slow).
+services:
+  ollama:
+    deploy: !reset {}
+  backend:
+    deploy: !reset {}

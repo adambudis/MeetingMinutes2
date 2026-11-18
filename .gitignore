@@ -1,0 +1,24 @@
+# Local configuration and runtime data
+.env
+data/
+bundle/
+
+# Model weights (see models/README.md)
+models/*
+!models/README.md
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# Node
+node_modules/
+dist/
+coverage/
+*.log
+
+# Original WPF project (kept on disk for reference, not part of this repo)
+MeetingMinutes-kral-update/

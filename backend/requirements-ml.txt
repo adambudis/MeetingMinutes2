@@ -1,0 +1,7 @@
+# Speech-to-text + diarization stack. Install together with constraints.txt:
+#   pip install -r requirements.txt -r requirements-ml.txt -c constraints.txt
+# torch / torchaudio / torchcodec must be installed first from the PyTorch CUDA index
+# (see Dockerfile) so the CUDA-enabled builds are kept.
+nemo_toolkit[asr]==2.7.0
+pyannote.audio==4.0.4
+librosa>=0.10.1
